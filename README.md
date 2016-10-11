@@ -22,6 +22,8 @@ public class Find
 }
 ```
 
+![Image of Dynamic Form](https://codeoverload.files.wordpress.com/2010/12/dynamicform_find.png?w=640)
+
 ### Credits
 https://codeoverload.wordpress.com/2010/12/24/dynamic-forms-in-c/
 
