@@ -1,4 +1,4 @@
-# DynamicForm
+# DynamicForm [![Unix-like Build Status](https://travis-ci.org/Rottweiler/DynamicForm.png?branch=master)](https://travis-ci.org/Rottweiler/DynamicForm) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/xlitx2lagfgfb6ur/branch/master?svg=true)](https://ci.appveyor.com/project/Rottweiler/DynamicForm/branch/master) [![Coverage Status](https://coveralls.io/repos/Rottweiler/DynamicForm/badge.png?branch=master)](https://coveralls.io/r/Rottweiler/DynamicForm?branch=master)
 Dynamic forms for your c# or visual basic .net application
 
 ### Usage
