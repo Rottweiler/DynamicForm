@@ -15,7 +15,9 @@
 /// along with this program; if not, write to the Free Software
 /// Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ///
+using CodeOverload.Windows.UI.Components;
 using System;
+using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
@@ -89,7 +91,14 @@ namespace CodeOverload.Windows
                 if (dateValue > date.MaxDate)
                     dateValue = date.MaxDate;
                 date.Value = dateValue;
+            }else if(type == typeof(FileInfo))
+            {
+                ctrl = new FileBrowserButton();
+                FileBrowserButton button = ctrl as FileBrowserButton;
+                button.FilePath.Text = (string) property.GetValue(item, null);
             }
+
+
             if (ctrl != null)
             {
                 ControlTag tag = new ControlTag();

@@ -15,8 +15,10 @@
 /// along with this program; if not, write to the Free Software
 /// Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 ///
+using CodeOverload.Windows.UI.Components;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -236,6 +238,10 @@ namespace CodeOverload.Windows
                 {
                     ComboBox dropdown = c as ComboBox;
                     property.SetValue(DataItem, Enum.Parse(tag.PropertyType, Convert.ToString(dropdown.SelectedItem)), null);
+                } else if (c is FileBrowserButton)
+                {
+                    FileBrowserButton button = c as FileBrowserButton;
+                    property.SetValue(DataItem, new FileInfo(button.FilePath.Text), null);
                 }
             }
         }
